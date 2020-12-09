@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Language" content="en-za" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Royden Botha</title>
+<link rel="stylesheet" href="css/styling.css">
+
+</head>
+
+<body>
+<div id="page">
+	<div id="sidebar">
+		<img src="../Swegga/swegga.jpg" alt="Logo">
+	</div>
+
+    <div id="banner">
+		<img src="../Swegga/delivery.gif" alt="Banner">
+	</div>
+	<div id="navigation">
+		<img src="../Sweggalinks.gif" usemap="#Navigationbar">
+		<map name="Navigationbar">
+			<area  href="../Swegga/home.html" coords="8,35,94,4" shape="rect" >
+			<area  href="../Swegga/services.html" coords="104,35,190,4" shape="rect" >
+			<area  href="../Swegga/products.html" coords="202,35,301,6" shape="rect" >
+			<area  href="../Swegga/order_status.html" coords="309,35,439,3" shape="rect" >
+			<area  href="../Swegga/contact_us.html" coords="448,35,554,5" shape="rect" >
+
+		</map>
+	</div>
+
+	<div id="main">
+		<form action="orders">
+			<table>
+				<caption>Product Summary</caption>
+
+				<!--Headings for the first row
+				    of the table-->
+				<th>Descriptions</th>
+				<th>Sizes</th>
+				<th>Colour</th>
+				<th>Price</th>
+				<th>Quantity</th>
+				<th>Total</th>
+
+				
+				<!--This will be information that will be displayed in the 
+				    row for females-->
+				<tr>
+					<td>
+						<a href="female_ski.html"> Female Ski Jackets</a>
+					</td>
+					<!--Sizes that's available-->
+					<td>
+					<select name="size" id="">
+						<option value="1">Small</option>
+						<option value="2">Medium</option>
+						<option value="3">Large</option>
+					</select>
+					</td>
+					<!--Colors available for females-->
+					<td>
+						<select name="colour" id="">
+							<option value="1">Red</option>
+							<option value="2">Pink</option>
+							<option value="3">Black</option>
+						</select>
+					</td>
+					<!--Price for female ski jackets-->
+					<td>
+						150.95
+					</td>
+					<!--text area-->
+					<td>
+						<input type="text" name="QtyF" id="QtyF" style="width: 85px;" >
+					</td>
+					<!--Where the amount for the females will be displayed-->
+					<td id="FemaleTotal"  style="width: 60px;">
+						<p></p>
+					</td>
+				</tr>
+
+				<!--This will be information that will be displayed in the 
+				    row for males-->
+				<tr>
+					<td>
+						<a href="male_ski.html"> Male Ski Jackets</a>
+					</td>
+					<!--Sizes that's available-->
+					<td>
+						<select name="size" id="">
+							<option value="1">Small</option>
+							<option value="2">Medium</option>
+							<option value="3">Large</option>
+						</select>
+					</td>
+					<!--Colors available for the males -->
+					<td>
+						<select name="colour" id="">
+							<option value="red">Red</option>
+							<option value="blue">Blue</option>
+							<option value="white">White</option>
+						</select>
+					</td>
+					<!--Price for  male ski jackets-->
+					<td>
+						180.95
+					</td>
+					<!--text area-->
+					<td>
+						<input type="text" name="QtyM" id="QtyM" style="width: 85px;" >
+					</td>
+					<!--Where the amount for the males will be displayed-->
+					<td id="MaleTotal" style="width: 60px;">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4">
+						Click to confirm and process your order
+					</td>
+					<!--Button-->
+					<!--The button that will add all the values together to get 
+						the total amount of .the two added up-->
+					<td>
+						<button type="button" style="width: 88px;" onclick="getGrandTotal()">
+							Total Price
+						</button>
+					</td>
+					<!--Where the total of the values will be added-->
+					<td id="Total"  style="width: 60px;">
+
+					</td>
+				</tr>
+			</table>			
+		</form>
+		<div id="footer" class="copyright">
+			<p>
+				© 2020 Swegga Fashion – Royden Botha
+			</p>
+		</div>
+
+	</div>
+	
+</div>
+
+</body>
+<script src="../Swegga/index.js">
+</script>
+</html>
